@@ -20,7 +20,7 @@ spec:
                 name: demo
                 port:
                   number: 80
-  tls:
-    - hosts:
-      - adaptercloud.store
-      secretName: demo-tls
+  # tls:
+  #   - hosts:
+  #     - adaptercloud.store
+  #     secretName: demo-tls
