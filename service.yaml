@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: demo
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: demo
   ports:
     - protocol: TCP
       port: 80
-      nodePort: 30001
+      targetPort: 30001
