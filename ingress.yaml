@@ -16,6 +16,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: demo
+                name: proxy-service
                 port:
-                  number: 80
+                  number: 5000
