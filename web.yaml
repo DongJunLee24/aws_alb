@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels:
+    app: mypod
+spec:
+  containers:
+  - name: mycontainer
+    image: walloonam/testfront:v4
+    ports:
+    - containerPort: 3000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mypod-service
+spec:
+  type: ClusterIP  # LoadBalancer에서 ClusterIP로 변경됩니다.
+  selector:
+    app: mypod
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
