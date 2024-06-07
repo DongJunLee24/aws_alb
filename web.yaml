@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: mycontainer
-        image: walloonam/testfront:v4
+        image: rlaaudgus/final-project3:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
 ---
