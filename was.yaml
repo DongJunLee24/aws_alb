@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fastapi
-        image: walloonam/my-fastapi-app:v5
+        image: walloonam/my-fastapi-app:v2
         ports:
         - containerPort: 8000  # FastAPI의 포트 번호를 8000으로 설정
 
